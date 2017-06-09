@@ -1,0 +1,131 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15 juil. 2016, 23:03:33
+    Author     : nicolas_buffart<concepteur-developpeur@nicolas-buffart.fr>
+*/
+
+/* affichage de la grille */
+/*div {
+  border: 1px solid red;
+}*/
+
+body { padding-top: 70px; }
+
+.center { text-align: center; }
+
+#banniere {
+  height: 120px;
+  text-align: center;
+  padding-top: 15px;
+  margin-bottom: 20px;
+}
+
+#banniere #sitename{
+  font-size: 4em;
+  line-height : 0.5;
+  margin-top: 20px;
+}
+
+#banniere #sitetitle{
+  font-size: 1.2em;
+  line-height : 0.5;
+}
+
+#pied {
+  background-color: #546E7A;
+  color: white;
+  min-height: 250px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+#corps {
+  text-align: justify;
+  min-height: 80vh;
+  margin-top: 20px;
+}
+
+#_404 {
+  margin-top: 100px;
+}
+
+.number {
+  font-size: 2em;
+}
+
+.chance {
+  display: inline-block;
+}
+
+.circle {
+  margin: auto;
+  padding-top: 22px;
+  display: block;
+  background: #3498db;
+  border-radius: 50%;
+  height: 88px;
+  width: 88px;
+}
+
+.internal-circle {
+  margin: auto;
+  display: block;
+  background: white;
+  color: black;
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+}
+
+.bonus {
+ background: #c0392b;
+}
+
+/*
+Surcharge de bootstrap pour une meilleure responsivité de la navbar avec le
+formulaire de connexion à droite
+*/
+@media (max-width: 1010px) {
+  .navbar-header {
+      float: none;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin: 7.5px -15px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .navbar-text {
+      float: none;
+      margin: 15px 0;
+  }
+  /* since 3.1.0 */
+  .navbar-collapse.collapse.in { 
+      display: block!important;
+  }
+  .collapsing {
+      overflow: hidden!important;
+  }
+}

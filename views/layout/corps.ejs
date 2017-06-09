@@ -1,0 +1,48 @@
+<section>
+  <div class="row">
+    <!-- Corps de page -->
+    <div class="col-md-12" id="corps">
+      <%- content %>
+      <br/>
+      <br/>
+      <% if (typeof grille !== 'undefined') { %>
+      <div class="panel panel-default">
+        <table class="table table-bordered">
+          <tr  class="bg-primary">
+            <td><h3 class="panel-title center">Numéro 1</h3></td>
+            <td><h3 class="panel-title center">Numéro 2</h3></td>
+            <td><h3 class="panel-title center">Numéro 3</h3></td>
+            <td><h3 class="panel-title center">Numéro 4</h3></td>
+            <td><h3 class="panel-title center">Numéro 5</h3></td>
+            <td><h3 class="panel-title center">Numéro chance <span class="glyphicon glyphicon-star"></span></h3></td>
+          </tr>
+          <tr>
+            <% grille.forEach(function(number) { %>
+            <td class="bg-success center number">
+              <figure class="circle">
+                <figure class="internal-circle">
+                  <%= number %>
+                </figure>
+                  
+              </figure>
+            </td>
+            <% }); %>
+            <td class="bg-warning center number">
+                <% bonus.forEach(function(number) { %>
+                <span class="chance">
+                  <figure class="circle bonus">
+                    <figure class="internal-circle">
+                      <%= number %>
+                    </figure>
+                  </figure>
+                </span>
+                <% }); %>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <% } %>
+    </div>
+    <!-- Fin corps de page -->
+  </div>
+</section>

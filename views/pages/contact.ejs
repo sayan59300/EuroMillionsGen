@@ -1,0 +1,44 @@
+<h1>Formulaire de contact</h1>
+<hr />
+<form name="contactForm" method="post" action="">
+  <label for="nom">Votre nom</label>
+  <div class="row">
+    <div class="col-md-3">
+      <input type="text" name="nom" class="form-control" id="nom" placeholder="Entrez votre nom" value=""/>
+    </div>
+  </div>
+  <br/>
+  <label for="prenom">Votre prénom</label>
+  <div class="row">
+    <div class="col-md-3">
+      <input type="text" name="prenom" class="form-control" id="prenom" placeholder="Entrez votre prénom" value=""/>
+    </div>
+  </div>
+  <br/>
+  <label for="email">Votre email</label>
+  <div class="row">
+    <div class="col-md-3">
+      <input type="email" name="email" class="form-control" id="email" placeholder="Entrez votre email" value=""/>
+    </div>
+  </div>
+  <br/>
+  <label for="objet">Objet</label>
+  <div class="row">
+    <div class="col-md-5">
+      <input type="text" name="objet" class="form-control" id="objet" placeholder="Objet du message" value=""/>
+    </div>
+  </div>
+  <br/>
+  <label for="textarea">Votre message</label>
+  <div class="row">
+    <div class="col-md-5">
+      <textarea rows="10" name="message" class="form-control" id="message" placeholder="Tapez votre message"></textarea>
+    </div>
+  </div>
+  <br/>
+  <div class="row">
+    <div class="col-md-3">
+      <input type="submit" name="envoyer" value="Envoyer" class="btn btn-primary" />
+    </div>
+  </div>
+</form>
